@@ -1,12 +1,12 @@
-def sayFuckYou(name):
-    return 'Fuck you' + ', ' + name
+def sayDamnYou(name):
+    return 'Damn you' + ', ' + name
 
-print(sayFuckYou('Ezikel'))
+print(sayDamnYou('Ezikel'))
 
 def executeTheFunc(func, param):
     return func(param);
 
-result = executeTheFunc(sayFuckYou, "Bro!")
+result = executeTheFunc(sayDamnYou, "Bro!")
 print(result)
 
 # Currying
