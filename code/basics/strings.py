@@ -27,3 +27,5 @@ print(sen_one.replace(" ", "-").upper())
 
 my_name = "Suyash"
 print(my_name + my_name[-1]*5)
+
+print("I am happy now!")
