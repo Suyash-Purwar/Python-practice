@@ -28,7 +28,7 @@ def main():
     operator = input("Enter the operator or just press enter if you want to perform all operations: ")
 
     if not operator:
-        calculator(x, y, 'all')
+        calculator(x, y)
     else:
         calculator(x, y, operator)
 
