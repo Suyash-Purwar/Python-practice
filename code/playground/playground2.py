@@ -8,21 +8,13 @@ for i in range(0, len(sentence)):
     else:
         listOfWords.append(tempStr)
         tempStr = ""
-
-
-for word in listOfWords:
-    if wordCount.get(word) == None:
-        wordCount[word] = 1
-
-    listOfWords.remove(word)
-    for next_words in listOfWords:
-        if word == next_words:
-            wordCount[word] = wordCount[word] + 1
         
+for i in range(0, len(listOfWords)):
+    if wordCount.get(listOfWords[i]) == None:
+        wordCount[listOfWords[i]] = 1
+    
+    for next_words in listOfWords[i+1:len(listOfWords)]:
+        if listOfWords[i] == next_words:
+            wordCount[listOfWords[i]] = wordCount[listOfWords[i]] + 1
+
 print(wordCount)
-
-# dict1 = {
-#     "name": "Suyash"
-# }
-
-# print(dict1.get("name2") == None)
