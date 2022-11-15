@@ -4,13 +4,13 @@ def sayDamnYou(name):
 print(sayDamnYou('Ezikel'))
 
 def executeTheFunc(func, param):
-    return func(param);
+    return func(param)
 
 result = executeTheFunc(sayDamnYou, "Bro!")
 print(result)
 
 # Currying
-summation = 0;
+summation = 0
 def curry(digit, ender=False):
     global summation
     summation += digit

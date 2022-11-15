@@ -1,0 +1,2 @@
+Delete all H and i when both are together
+Hello Hi PythonHiCSE Hi Hello Hi
